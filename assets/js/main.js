@@ -26,12 +26,12 @@ function calcValue(event) {
   const output = document.getElementById("endbetrag");
 
   if (userAufschlag == true && userProzent19 == true) {
-    output.innerHTML = aufschlagMwst19;
+    output.innerHTML = aufschlagMwst19.toFixed(2);
   } else if (userAufschlag == true && userProzent7 == true) {
-    output.innerHTML = aufschlagMwst7;
+    output.innerHTML = aufschlagMwst7.toFixed(2);
   } else if (userAbschlag == true && userProzent19 == true) {
-    output.innerHTML = abschlagMwst19;
+    output.innerHTML = abschlagMwst19.toFixed(2);
   } else if (userAbschlag == true && userProzent7 == true) {
-    output.innerHTML = abschlagMwst7;
+    output.innerHTML = abschlagMwst7.toFixed(2);
   }
 }
